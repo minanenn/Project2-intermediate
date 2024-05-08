@@ -5,103 +5,243 @@
   --lighter: hsl(273, 4%, 51%);
   --lightest: hsl(273, 4%, 51%);
 }
-*{
-margin: 0;
-padding: 0;
-text-decoration: none;
-list-style: none;
-
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-h1{
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-text-align: center;
-
-
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  text-align: center;
 }
 
-body{
-    font-family: "Karla", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 40px;
 }
 
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  text-align: center;
+}
 
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
 
-
-ul{
+.menuitems{
     display: flex;
-  align-items: center;
+    flex-direction: row;
+    align-items: center;
 
-}
+  }
+  .menuitems li{
 
-ul li{
-padding: 15px;
+    padding: 5px;
+  }
 
+  
+.menuitems a{
+text-decoration: none;
+color: var(--lighter);
+text-transform: uppercase;
+font-size: 10px;
 
 }
 
 nav {
-
-display: flex;
-justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 
-nav img{
-    margin-top: 20px;
-    margin-left: 20px;
-
+nav img {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .main {
     position: relative;
-    background-color: var(--primary-color);
-    padding: 20px;
-    color: white;
+
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: white;
 }
 
-.pattern-left{
-position: absolute;
-left: 0;
-top: 0;
+.main p {
+  z-index: 1;
+  position: relative;
+}
+
+.main h1 {
+  z-index: 1;
+  position: relative;
+}
+
+.pattern-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.pattern-right {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+.hero-image {
+  margin-bottom: -5px;
+  margin-right: -20px;
+}
+
+.main-heading {
+  padding: 15px;
+  text-align: center;
+}
+
+.main button {
+  background-color: transparent;
+  border: 2px solid white;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.main button a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+}
+
+.WeAreDifferentContainer {
+   
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.card {
+   
+  margin-bottom: 60px;
+}
+
+.card .card-paragraph {
+  color: var(--lighter);
+}
+.card img {
+  margin-bottom: 20px;
+}
+
+.HowWeWork {
+  position: relative;
+  background-color: var(--primary-color);
+  padding: 50px;
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin: 20px;
+}
+
+.HowWeWork h2 {
+  position: relative;
+  z-index: 1;
+}
+
+.pattern-HowWeWork {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.center-HowWeWorkButton {
+  display: flex;
+  justify-content: center;
+}
+
+.HowWeWork button {
+  background-color: transparent;
+  border: 2px solid white;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.HowWeWork button a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.last {
+    position: relative;
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+.last .LogoLast {
+    position: relative;
+    z-index: 1;
+    
+    
+    }
+
+.last .pattern-last {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
 
 }
 
-.hero-image{
+.social-media {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
-margin-bottom: -5px;
+.social-media img{
+    position: relative;
+z-index: 1;
 
 }
 
-.main button{
-
-background-color: transparent;
-border: 2px solid white ;
-height: 40px;
-margin-top: 15px;
-
-}
-
-.main-heading{
-padding: 15px;
-text-align: center;
-
-}
-
-
-.main button a{
-text-decoration: none;
-color: white;
-padding: 15px;
-text-align: center;
+h4{
 text-transform: uppercase;
+color: var(--lighter);
 }
 
+section a{
 
-
-.center-button{
-display: flex;
-justify-content: center;
+text-transform: uppercase;
+color: var(--lightest);
+text-decoration: none;
 
 }
+
+section{
+    display: flex;
+    flex-direction: column;
+text-align: center;
+
+}
+    
