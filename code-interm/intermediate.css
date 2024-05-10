@@ -36,14 +36,11 @@ body {
   font-weight: 400;
 }
 
-
 .menuitems {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
-
 
 .menuitems li {
   padding: 5px;
@@ -74,6 +71,11 @@ nav img {
   margin-left: 20px;
 }
 
+/*.headerWrapper{
+
+  display: flex;
+flex-direction: column-reverse;
+ } */
 .main {
   position: relative;
 
@@ -107,6 +109,11 @@ nav img {
   right: 0;
   z-index: 0;
 }
+.firstHr {
+  width: 6rem;
+  margin-left: 30px;
+  display: none;
+}
 
 .hero-image {
   background-image: url(images/image-intro-desktop.jpg);
@@ -119,7 +126,6 @@ nav img {
 
   max-width: 550px;
 }
-
 
 .main button {
   background-color: transparent;
@@ -141,7 +147,6 @@ nav img {
   display: flex;
   justify-content: center;
 }
-
 .WeAreDifferentContainer {
   display: flex;
   flex-direction: column;
@@ -168,13 +173,13 @@ nav img {
   padding: 50px;
   color: white;
   text-align: center;
-  width: 50%;
-  margin: 20px;
+height:300px ;
 }
 
 .HowWeWork h2 {
   position: relative;
   z-index: 1;
+  margin-top: 80px;
 }
 
 .pattern-HowWeWork {
@@ -223,8 +228,8 @@ nav img {
 }
 
 .social-media {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 80px;
 }
 
 .social-media img {
@@ -251,9 +256,10 @@ section {
   gap: 30px;
 }
 
-hr {
-  margin-bottom: 20px;
-}
+.differentHr {
+display: none;}
+
+
 
 @media (min-width: 1020px) {
   header {
@@ -261,40 +267,48 @@ hr {
   }
 
   .different {
-    margin-top: 5rem;
-
+    margin-top: 9rem;
   }
 
-  
   .hero-image {
     position: absolute;
     background-image: url(images/image-intro-desktop.jpg);
     bottom: 450px;
     z-index: 1;
     right: 100px;
+    width: 30rem;
+    height: 30rem;
+   
+  }
 
-    width: 25rem;
-    height: 25rem;
+  .main-heading {
+    width: 300px;
 
+    max-width: 450px;
+  }
+
+  .mainHOne {
+    width: 300px;
+    max-width: 450px;
+  }
+
+  .firstHr {
+    display: inline;
   }
 
 
-  .main-heading{
-width: 300px;}
+   /* .differentHr{
+    
 
-.mainHOne{
 
-  width: 300px;
 
-}
+  }  */
 
-  
 
   .text-container {
     border: 1px solid green;
     width: 50vw;
   }
-
 
   .pattern-left {
     position: absolute;
@@ -322,13 +336,10 @@ width: 300px;}
     margin-top: 60px;
   }
 
-  .center-button{
+  .center-button {
     justify-content: left;
-margin-left: 110px;
-
-
+    margin-left: 110px;
   }
-
 
   .WeAreDifferentContainer {
     flex-direction: row;
@@ -337,10 +348,11 @@ margin-left: 110px;
   }
 
   .HowWeWork {
-    width: 100%;
+    width: 80%;
     margin: 0;
     margin-bottom: 30px;
-  }
+    margin-left: 150px;
+margin-right: 150px;  }
 
   section {
     width: 100%;
@@ -366,7 +378,6 @@ margin-left: 110px;
   section li a {
     margin-bottom: 5px;
     color: var(--violet);
-    font-weight: ;
   }
 
   .last {
